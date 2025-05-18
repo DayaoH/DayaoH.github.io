@@ -1,0 +1,390 @@
+body{-moz-user-select:none;background:#000;font-family:Yahei mono,Verdana,fixedsys;overflow-x:hidden}
+td{font-family:Verdana;font-size:12px}
+div{left:0}
+span{cursor:default;}
+span,div,h2,h3{padding:0;margin:0}
+td.HandBookZombie{background: url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_ZombieWindow2.png) no-repeat; width:20%; height:16%; text-align:center}
+#DivTeach{
+filter:"alpha(opacity=90)"; /* IE 8 */
+filter:alpha(opacity=90); /* IE 4-7 */
+opacity:.9; /* FireFox,Safari(WebKit),Opera */
+-moz-opacity:.9; /* FireFox<3.5 */
+cursor:pointer;
+position:absolute;width:505px;height:111px;top:130px;left:300;z-index:100;text-align: center; font-family: Yahei Mono; font-size: 18px; font-weight: bold; color: #000; background-color: rgba(91, 67, 46, 0); font-family:微软雅黑}
+.WindowFrame{position:absolute;top:0;width:900px;left:50%;margin-left:-450px;height:600px;overflow:hidden}
+
+#DivParty{
+filter:"alpha(opacity=90)"; /* IE 8 */
+filter:alpha(opacity=90); /* IE 4-7 */
+opacity:.9; /* FireFox,Safari(WebKit),Opera */
+-moz-opacity:.9; /* FireFox<3.5 */
+position:absolute;width:900px;height:0px;top:500px;left:0;z-index:100;text-align: center; font-family: Yahei Mono; font-size: 18px; font-weight: bold; color: #FFF; background-color: #5B432E}
+.WindowFrame{position:absolute;top:0;width:900px;left:50%;margin-left:-450px;height:600px;overflow:hidden}
+
+#dLvlLink{position:absolute;top:587px;color:#fff;width:500px;left:50%;margin-left:-230px;font-size:13px;line-height:14px;height:15px;font-family:arial,sans-serif;z-index:1;text-align:left}
+#dLvlLink span{font-weight:bold;text-decoration:underline}
+#dLvlLink a{color:#fff}
+#dAD2,#dTitleSmallContainer,#dMiniSmallContainer,#dxiyouji{display:none}
+
+#dAdFlash{display:block}
+#dAdFlash div{width:336px;font-family:Yahei Mono,arial,verdana;font-size:11px;position:absolute;left:60px;top:380px;text-align:right;padding-right:50px}
+
+#dFlagMeter{visibility:hidden;position:absolute;z-index:255;left:50%;margin-left:-340px;top:0;height:45px}
+#dFlagMeterTitle{position:absolute;text-align:right}
+#sFlagMeterTitleF{position:absolute;color:#FCFDBB;font-size:25px;font-weight:bold;width:250px;top:-502px;left:90px;font-family:微软雅黑}
+#dFlagMeterTitleB{position:absolute;color:#000;font-size:25px;font-weight:bold;width:250px;height:21px;top:-500px;left:88px;font-family:微软雅黑}
+#dFlagMeterContent{position:absolute;left:200px;top:-550px}
+#dFlagMeterContent .flag{top:14px;visibility:hidden}
+#imgFlagMeterFull{top:17px;clip:rect(0,auto,auto,157px);transition: clip 0.5s; }
+#imgFlagMeterEmpty{top:17px}
+#imgFlag1{left:10px}
+#imgFlag2{left:40px}
+#imgFlag3{left:70px}
+#imgFlag4{left:100px}
+#imgGQJC{left:35px;top:29px;visibility:hidden}
+#imgFlagHead{left:139px;top:13px;transition: left 0.5s;}
+
+#dFlagMeter1{visibility:hidden;position:absolute;z-index:255;left:50%;margin-left:-340px;top:0;height:45px}
+#dFlagMeterTitle1{position:absolute;text-align:right}
+#sFlagMeterTitleF1{position:absolute;color:#F93;font-size:18px;font-weight:bold;width:250px;top:19px;left:88px;font-family:微软雅黑}
+#dFlagMeterTitleB1{position:absolute;color:#000;font-size:18px;font-weight:bold;width:250px;height:21px;top:20px;left:-5px;font-family:微软雅黑}
+#dFlagMeterContent1{position:absolute;left:444px;width:157px;height:40px}
+#dFlagMeterContent1 .flag{top:14px;visibility:hidden}
+#imgFlagMeterFull1{top:17px;clip:rect(0,auto,auto,157px);transition: clip 0.5s; }
+#imgFlagMeterEmpty1{top:17px}
+#imgFlag11{left:10px}
+#imgFlag21{left:40px}
+#imgFlag31{left:70px}
+#imgFlag41{left:100px}
+#imgGQJC1{left:35px;top:29px;visibility:hidden}
+#imgFlagHead1{left:139px;top:13px;transition: left 0.5s;}
+
+#dSurface{display:none;z-index:255}
+#dAdventure{position:absolute;left:130px;top:290px;width:97px;height:104.5px;cursor:pointer}
+#dAdventure1{position:absolute;left:500px;top:295px;width:90px;height:90px;cursor:pointer}
+#dAdventure2{position:absolute;left:620px;top:360px;width:120px;height:89px;cursor:pointer}
+#iSurfaceBackground .adventure0{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/TwinSun.gif) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/TwinSun.gif) no-repeat}
+#iSurfaceBackground .adventure1{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreenAdventure_32.png) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreenAdventure_8.png) no-repeat}
+#iSurfaceBackground .Sunflower_trophy{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SpringBean.gif) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SpringBean.gif) no-repeat}
+#iSurfaceBackground .ShowOptions{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Feel.gif) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Feel.gif) no-repeat}
+#iSurfaceBackground .mini{position:absolute;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Pumkin.gif) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Pumkin.gif) no-repeat;left:300px;top:250px;width:120px;height:120px;cursor:pointer}
+#iSurfaceBackground .challenge{position:absolute;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Hurrikale.gif) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Hurrikale.gif) no-repeat;left:45px;top:395px;width:111px;height:110px;cursor:pointer}
+#iSurfaceBackground .Act{position:absolute;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/PeaPod.gif) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/PeaPod.gif) no-repeat;left:730px;top:400px;width:120px;height:120px;cursor:pointer}
+#iSurfaceBackground .mission{position:absolute;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/BonkChoy.gif) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/BonkChoy.gif) no-repeat;left:25px;top:405px;width:120px;height:100px;cursor:pointer}
+#iSurfaceBackground .riddle{position:absolute;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreenChallenges_32.png) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreenChallenges_8.png) no-repeat;left:478px;top:303px;width:286px;height:122px;cursor:pointer}
+#iSurfaceBackground .handbook{position:absolute;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreen_Almanac.png) no-repeat;left:437px;top:459.5px;width:159px;height:107px;cursor:pointer}
+#iSurfaceBackground .Box{position:absolute;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreen_Box.png) no-repeat;left:288px;top:450px;width:145px;height:121px;cursor:pointer}
+#ZombieHand{position:absolute;width:330px;height:330px;left:412px;top:508px;display:none;overflow:hidden}
+#dName{position:absolute;left:35px;width:230px;top:93px;height:25px;text-align:center;color:#FC6;font-weight:bold;font-size:18px;font-family:微软雅黑,Verdana,Tahoma}
+#dNameDiv0{position:absolute;left:20px;top:-260px;width:293px;height:260px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreen_WoodSign1_32.png) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreen_WoodSign1_8.png) no-repeat}
+#dNameDiv1{cursor:pointer;position:absolute;left:3px;top:96px;width:291px;height:71px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreen_WoodSign2_32.png) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreen_WoodSign2_8.png) no-repeat}
+#dNameDiv2{position:absolute;left:14px;top:136px;width:293px;height:150px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreen_WoodSign3_32.png) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SelectorScreen_WoodSign3_8.png) no-repeat;overflow:hidden}
+
+#dSurfaceBack{position:absolute;top:0;width:0;height:0;z-index:255}
+#dHelp{width:614px;height:399px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Help.png) no-repeat;position:absolute;display:none;left:143px;top:100px}
+
+
+@#dSelectLevel{position:absolute;width:100%;height:100%;font-weight:bold;display:none}
+#dOptionsMenuBack{position:absolute;text-align:center;left:244px;top:60px;width:412px;height:483px;display:none;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/OptionsMenuback32.png) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/OptionsMenuback8.png) no-repeat}
+#dTodaysActBack{position:absolute;text-align:center;left:244px;top:60px;width:412px;height:483px;display:none;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/OptionsMenuback32.png) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/OptionsMenuback8.png) no-repeat}
+.TitleBigContainer{position:relative;width:220px;margin:120px auto 0 auto;height:240px;overflow:hidden}
+@#dTitleSmallContainer span{cursor:pointer}
+
+
+#dMiniSmallContainer .SmallLevel{width:100%}
+#dMiniSmallContainer .BigLevel span{cursor:pointer}
+#dxiyouji .SmallLevel{width:100%}
+#dxiyouji .BigLevel span{cursor:pointer}
+#dMiniLvl2{position:absolute;left:0;top:0;display:none}
+
+#dBigLvl2,#dBigLvl3{position:absolute;left:0;top:0;display:none}
+.SmallLevel{float:left;cursor:pointer;width:50%;font-size:14px}
+.BigLevel{float:left;color:#FC6;font-size:18px;width:100%;height:35px}
+.OptionsMenuButton,.OptionsMenuButtonDown{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/OptionsBackButton32.png) no-repeat;_background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/OptionsBackButton8.png) no-repeat;float:left;font-family:黑体;font-size:32px;cursor:pointer;width:360px;height:100px;margin-left:26px;display:inline;color:#FC6}
+.OptionsMenuButton{background-position:0 0}
+.OptionsMenuButtonDown{background-position:0 -100px}
+.OptionsMenuButtonSpan{height:100px;line-height:100px;cursor:pointer}
+
+.SelectModal{color: #FC6; font-weight: bold;cursor:pointer;background: url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Button.png) no-repeat center;text-align:center;height:43px;width:115px}
+.Menu{float:left;text-align:center;line-height:41px;font-weight:bold;font-family:黑体;color:rgba(0, 203, 8, 0);height:52px;width:70px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Button_M.png) no-repeat}
+.Menu0{float:left;text-align:center;line-height:41px;font-weight:bold;font-family:黑体;color:rgba(0, 203, 8, 0);height:52px;width:70px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Button_STOP.png) no-repeat}
+#1imgSF{position:absolute;z-index:1}
+#imgSF{position:absolute;cursor:pointer;z-index:256}
+#PointerUD{position:absolute;z-index:50}
+#dTitle{visibility:hidden;position:absolute;background-color:#FFD;width:180px;font-size:12px;text-align:center;line-height:1.5;border:1px solid #000;padding:3px;z-index:254}
+#dAll{background:url('/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/js/Main.jpg')}
+#dAll img,#dFlagMeter img,#dHandBookPCard img{position:absolute;border-style:none}
+#dPZ{position:absolute}
+#dFog{position:absolute;left:1290px;top:10px;height:600px;width:800px;z-index:24}
+#dFog img{opacity:.7;filter:alpha(opacity=70)}
+#tGround{position:absolute;width:1400px;height:600px;visibility:hidden;z-index:0}
+#dCardList{visibility:hidden;position:absolute;left:500px;top:60px;width:100px;overflow:visible;z-index:254}
+#dCardList div{position:relative;cursor:pointer;padding:0;height:60px;overflow:hidden}
+#dCardList span{cursor:pointer;text-align:right;position:absolute;left:58px;width:18px;top:30px;font-family:Cafeteria Black;font-size:0px}
+#dCardList img{position:absolute}
+#dZombie{position:absolute;width:100px;height:300px;left:1050px;top:-75;z-index:1}
+#bShowHandBook{visibility:hidden;position:absolute;left:1300px;top:555px;text-align:center;cursor:pointer;width:88px;height:43px;z-index:201;line-height:43px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_ShowButton.png);color:#000080;font-size:0px}
+#dSelectCard{visibility:hidden;position:absolute;left:600px;top:0;width:600px;height:600px;z-index:20;background: url('/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SeedChooser_Background.png') no-repeat}
+#dSelectCard .title{text-align:center;line-height:35px;font-size:14px;color:#FC6;height:35px;width:100%;top:0;font-family:新宋体;font-weight:bold}
+#dSelectCard .bTitle{width:71%;height:40px;line-height:40px;text-align:center;margin-top:-7px}
+#dSelectCard .button{width: 100px; height: 45px; border-left: 1px solid rgba(225, 219, 223, 0); border-right: 3px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Button_Re.png")}
+#dSelectCard .button1{width: 100px; height: 45px; border-left: 1px solid rgba(225, 219, 223, 0); border-right: 3px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Button_St.png")}
+#dPCard{position:relative;width:70%;height:455px;padding-left:13px;_padding-left:10px;left:20px}
+#dPCard .span1,#dHandBookPCard .span1{cursor:pointer;width:70px;height:42px;overflow:hidden;float:left;margin:8px 0 0 2px;position:relative}
+#dPCard .span2,#dHandBookPCard .span2{cursor:pointer;text-align:right;position:absolute;left:42px;width:18px;top:20px;font-family:Cafeteria Black;font-size:0px}
+#dPCard img,#dHandBookPCard img{left:0;width:70px;height:84px}
+
+#dTop{position:absolute;left:605px;top:561px;height:35px;width:123px;visibility:hidden;z-index:1}
+#dSunNum{background:url('/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/SunBack.png') no-repeat;position:absolute;width:123px;height:48px}
+#sSunNum{text-align:center;position:absolute;top:10px;left:43px;width:68px;font-family:Verdana;font-weight:bold;font-size:18pt;color:#FFF}
+#tdShovel{position:absolute;width:71px;height:35px;left:-90px;background: url('/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/ShovelBack.png') no-repeat;visibility:hidden;z-index:999999999999;top:10px}
+#dPlants,#dZombies{position:absolute;left:0;top:0;z-index:2}
+
+#dMenu{visibility:hidden;position:absolute;top:0;left:56%;margin-left:227px;cursor:pointer;width:226px;height:41px;z-index:254}
+#dHandBook{visibility:hidden;position:absolute;z-index:255;width:900px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_IndexBack.jpg) no-repeat}
+#dHandBook .title{position:relative;text-align:center;line-height:92px;height:88px;width:100%;font-size: 32px; font-weight: bold; font-family: 黑体}
+#dHandBook .content{position:relative;height:423px;width:100%}
+#dHandBook .content div{position:absolute;width:50%;text-align:center;padding-top:135px}
+#dHandBook .content div .button{cursor:pointer;width:113px;height:41px;font-size:14pt;font-weight:bold;font-family:幼圆}
+#dHandBook .close{margin-top:20px;margin-left:670px;text-align:center;cursor:pointer;width:113px;height:43px;line-height:43px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_CloseButton.png);color:#000080;font-size:0px}
+#btnViewPlant{cursor:pointer;width: 113; height: 41; border-left: 3px solid #85411C; border-right: 3px solid #4E250C; border-top: 3px solid #85411C; border-bottom: 3px solid #4E250C; background-color: #8F431B; color:#FFCC66; font-weight:bold; font-size:14pt; font-family:幼圆;margin-top:43px}
+#btnViewZombie{cursor:pointer;width: 113; height: 41; background:#404364; color:#00F500; font-weight:bold; font-size:14pt; font-family:幼圆;margin-top:25px; border-left: 3px solid #6C6C85; border-right: 3px solid #686788; border-top: 3px solid #6C6C85; border-bottom: 3px solid #727390; }
+
+#dHandBookPZ{visibility:hidden;position:absolute;z-index:255;width:900px}
+#dHandBookPZ .dButton{position:absolute;left:0;top:568px;width:100%}
+#dHandBookPZ .dButton div{position:absolute;text-align:center;cursor:pointer;height:43px;line-height:43px;color:#000080;font-size:0px}
+#dHandBookPZ .dButton .button1{left:130px;top:-501px;width:83px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/New_ZCard_Btn.png);height:24}
+#dHandBookPZ .dButton .button2{left:780px;width:113px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_CloseButton.png);top:-530}
+#dHandBookPZ .dButton .button3{left:40px;top:-501px;width:83px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/New_PCard_Btn.png);height:24}
+
+#dHandBookP{position:absolute;top:0;width:100%;height:567px}
+#dHandBookP .title,#dHandBookZ .title{position:absolute;top:0;width:100%;height:70px;text-align:center;font-size:20px;font-family:黑体;font-weight:bold}
+#dHandBookP .title{line-height:90px;color:#CEAA31}
+#dHandBookP .list{position:absolute;text-align:center;left:48%;height:497px;top:71px}
+#dHandBookZ .list{position:absolute;text-align:center;left:47.8%;height:497px;top:72px}
+#dHandBookP .list{width:60%;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/New_PCard_Layer2.png) no-repeat 8px 9px}
+#dHandBookP .list .cost_cool{width:74%;font-size:16px;margin-left:190px;margin-right:auto;text-align:left;font-family:微软雅黑;margin-top:-430px;color:#FFFFCC}
+#dHandBookP .list .cost_cool .cost{float:left;width:20%;margin-left:-5}
+#dHandBookP .list .cost_cool .cool{float:left;width:30%;margin-left:-3}
+#dHandBookPCard{position:absolute;top:71px;width:55%;height:497px;margin:23px 0 0 32px}
+
+#pPlantBack,#pZombieBack{position:absolute;width:200px;height:200px;background:url('/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_Ground.png') no-repeat}
+#pPlantBack{left:518px;top:84px;}
+#pHandBookPlant{width:200;height:154px;background-repeat:no-repeat;background-position:50% 60%;margin-top:21;margin-left:21}
+#dHandBookPlantName{width:44%;text-align:center;line-height:61px;font-size:27px;color:#000000;font-family:微软雅黑}
+#dHandBookPlantNameShadow{width:44.1%;text-align:center;line-height:61px;font-size:27px;color:#FF0000;font-family:微软雅黑}
+#dProducePlant{margin-left:auto;margin-right:auto;width:75%;height:197px;text-align:left;font-size:16px;line-height:1.4;font-family:微软雅黑;margin:20px 0 0 20px}
+#spSunNum{float:left;width:24%;margin-left:108;font-family:微软雅黑;font-size:30px}
+#spCoolTime{float:left;width:24%;margin-left:108;font-family:微软雅黑;font-size:30px;margin-top:15}
+#spHP{float:left;width:24%;margin-left:108;font-family:微软雅黑;font-size:30px;margin-top:15}
+#spRange{float:left;margin-left:108;font-family:微软雅黑;font-size:30px;margin-top:11;width:200px}
+#dHandBookZ{display:none;position:absolute;top:0;width:100%;height:567px}
+#dHandBookZ .title{line-height:90px;color:#0F0}
+#dHandBookZ .list{width:60%;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/New_ZCard_Layer2.png) no-repeat 10px 8px}
+#dHandBookZCard{position:absolute;top:71px;margin:23px 0 0 29px}
+#dHandBookZCard img{position:absolute}
+#dHandBookZCard .span1{cursor:pointer;overflow:hidden;width:60px;height:60px;float:left;margin:8px 0 0 2px;position:relative}
+#dHandBookZCard .span2{cursor:pointer;text-align:right;width:25px;position:absolute;left:63px;width:18px;top:30px;font-family:Cafeteria Black;font-size:25px;color:#fff}
+#pZombieBack{left:10000px;top:100000px}
+#pHandBookZombie{width:201;height:153;background-repeat:no-repeat;background-position:50% 70%;margin:21px 0 0 129px}
+#dHandBookZombieName{width:85%;height:60px;text-align:center;line-height:61px;font-size:25px;color:#000000;font-family:微软雅黑}
+#dProduceZombie{margin-left:auto;margin-right:auto;width:75%;height:197px;text-align:left;font-size:16px;line-height:1.4;font-family:微软雅黑;margin:20}
+
+#dNewPlant{visibility:hidden;position:absolute;top:0;left:50%;margin-left:-450px;width:900px;height:600px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/AwardScreen_Back.jpg) no-repeat}
+#dNewPlant .card{position:absolute;top:150px;width:670px;height:191px;line-height:191px;text-align:center}
+#dNewPlantTitle{position:absolute;left:50%;text-align:center;margin-left:-250px;color: #FC6; font-size: 20px;height:90px;line-height:90px; font-weight: bold; width:500px}
+#dNewPlantName{position:absolute;position:absolute;top:372px;left:48.4%;margin-left:-150px;width:300px;height:55px;font-family: 微软雅黑; font-size: 25px; color: #4B9035; font-weight: bold;line-height:55px}
+#dNewPlantTooltip{position:absolute;left:72%;top:320px;margin-left:-140px;width:163px;font-weight: bold;font-family: 微软雅黑; font-size: 15px;color:#232323}
+#btnNextLevel{position:absolute;cursor:pointer;width: 113px; height: 41px; font-weight:bold; font-size:14px; font-family:幼圆; left:400px; top:470px}
+
+#dProcess{text-align:center;background:url("/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Ad board.png");color:#FFF;position:absolute;left:50%;margin-left:-430px;top:0px;width:900px;height:580px;visibility:hidden;z-index:250;padding:6px;*padding:6px 5px 10px 2px}
+#dProcess img{margin:5px 0}
+#dProcess .button{cursor:pointer;width:120px;height:40px;border-left:rgba(143, 67, 27, 0);border-right:rgba(143, 67, 27, 0);border-top:rgba(143, 67, 27, 0);border-bottom:rgba(143, 67, 27, 0);background-color:rgba(143, 67, 27, 0);color:rgba(143, 67, 27, 0);font-weight:bold;font-size:14px;font-family:Yahei Mono}
+#sFailed{line-height:30px;font-size:16px;color:#FF0;font-weight:bold}
+#dProcess2{overflow:auto;line-height:18px;font-size:12px;text-align:left;width:100%;height:500px}
+dt{line-height:20px;font-size:15px;margin:8px 0 0 15px;color:#E80;font-family:Verdana,Tahoma;font-weight:bold}
+dd{line-height:22px;font-size:12px;margin:0}
+dd.yellow{color:#FF0}
+
+.Tom1{left:0;top:0;width:86px;height:91px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Tombstones.png) no-repeat}
+.Tom2{position:absolute;left:0;top:0;width:86px;height:91px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Tombstone_mounds.png) no-repeat}
+
+.flipH{
+	-moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-o-transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#dText1,#dText2{position:relative;width:100%}
+#dText1{height:90px;_margin-bottom:10px}
+#dLink{position:absolute;top:602px;left:0}
+#dLinkTop,#dChatView2{position:relative;float:left;width:393px;_width:384px}
+#dLink,#dLinkTop{color:#FFF;padding:0;height:59px}
+#dLink div,#dLinkTop div,#dChatView2 div{float:left;margin-right:2px;height:59px;_margin-right:1px}
+
+#dAdFlash{position:absolute;top:100px;left:50%;width:320px;height:290px;padding:45px 107px 45px 107px;margin-left:-275px;z-index:254;display:none}
+#dAdFlash div{position:absolute}
+#dAD2{position:absolute;left:50%;margin-left:-234px;top:500px;height:15px;width:468px;z-index:250}
+
+.a5gg{position:relative;width:161px;text-align:center;background:#f0f0f0;font-size:12px;border:0 solid #CCD3DF}
+.a5gg dt{margin-top:0;line-height:17px}
+.a5gg a{text-decoration:none;color:#336CD8;font-size:12px}
+.a5gg dd{margin-left:2px;width:30px;height:14px;line-height:14px;float:left;_margin-left:1px}
+
+#dChat{position:absolute;left:50%;margin-left:-421px;top:5px;z-index:255}
+#dChat div{position:absolute}
+#dChatView{display:none;width:842px;height:585px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/talk.png)}
+#dChatView .bg{position:absolute;left:20px;top:20px;width:800px;height:395px;background:#FFCF94;filter:alpha(opacity=90);opacity:.9}
+#dChatView iframe{background-color:transparent}
+#dChatView .IF2{position:absolute;left:60px;top:530px;width:710px;height:35px}
+
+.Almanac_IndexBack{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/New_PCard_BG.jpg) no-repeat;width:900px;height:600px}
+.Almanac_PlantBack{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/New_PCard_BG.jpg) no-repeat;width:900px;height:600px}
+.Almanac_ZombieBack{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/New_PCard_BG.jpg) no-repeat;width:900px;height:600px}
+.Almanac_ZombieBack1{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_ZombieBack1.jpg) no-repeat;width:900px;height:600px}
+.Almanac_ZombieBack2{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Challenge_Background_Xiyouji.jpg) no-repeat;width:900px;height:600px}
+.Challenge_Background{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Challenge_Background.jpg) no-repeat;width:900px;height:600px}
+.Challenge_Background_Level{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/choosecard.png) no-repeat;width:900px;height:600px}
+.Xiyouji_Background{background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/xiyouji_guanqia.jpg) no-repeat;width:900px;height:600px}
+
+.Sunflower_trophy{position:absolute;left:516px;top:508px;width:75px;height:75px;overflow:hidden;cursor:pointer}
+.Sunflower_trophy img{position:absolute;left:0px;*filter:glow(color=#ffffff ,strength=8)}
+
+#dLogin{position:absolute;left:0;top:0;width:900px;height:600px;z-index:255;display:none;font-weight:bold}
+#dLogin table{position:absolute;left:233px;top:90px;height:400px;width:434px}
+#dLogin .list{position:absolute;left:0;top:90px;margin-top:0;z-index:200;width:100%;font-size:13px;text-align:center;color:#FFF}
+#dLogin .list div,#dPause .list div{position:relative;width:100%}
+#dLogin .button,#dPause .button{position:absolute;cursor:pointer;top:410px;font-family:宋体;color:#F93;font-size:24px;font-weight:700}
+#dPause .button{left:150px;top:404px}
+#dPauseAD{left:0;height:100%}
+#dLoadUserName{visibility:hidden;top:170px;height:100%;text-align:center}
+
+#dPause{position:absolute;left:233px;top:20px;width:434px;display:none;font-weight:bold}
+#dPause .list{position:absolute;left:0;top:90px;z-index:200;width:100%;text-align:center}
+#dPause .list .hidden{cursor:pointer;height:20px;color:#F93;font-size:16px;line-height:20px}
+#dPause .list .pause{color:#000;font-size:18px;line-height:30px}
+#dOptionsMenu{line-height:30px;position:absolute;width:100%;height:100%;display:none;font-weight:bold}
+#dOptionsMenu .button{cursor:pointer;color:#632F00;text-decoration:none;font-family:方正准圆简体;font-size:30}
+#dOptionsMenu .OMd0{margin-top:120px;height:65px;position:relative}
+#dOptionsMenu .OMd0 .OMd1{position:absolute;left:100px;text-align:left;top:3}
+#dOptionsMenu .OMd0 .OMd1 div{height:30px}
+#dOptionsMenu .OMd0 .OMd1 div label{color:#632F00;font-family:方正准圆简体;font-size:27px}
+
+#dMiniSmallContainer,#dxiyouji,#dRiddleSmallContainer,#dRiddleSmallContainer1,#dAdvSmallContainer{display:none;position:absolute;left:0;top:0}
+#dMiniSmallContainer table{position:absolute;left:0}
+#dxiyouji table{position:absolute;left:0}
+#dRiddleTitle,#dRiddleTitle1,#dMiniSmallTitle,#dAdvSmallTitle{position:relative;text-align:center;line-height:88px;height:88px;width:100%;font-size:30px; font-weight: bold; font-family: 方正少儿_GBK;color:#FFFFFF}
+#dRiddleTitle{color:#fff}
+#dRiddleTitle1{color:#fff}
+#dRiddleInx{position:relative;height:473px;width:100%}
+#dRiddleInx div{position:absolute;width:50%;height:442px;text-align:center}
+#dRiddleInx .button{cursor:pointer;width:113px;height:41px;border-left:3px solid #85411C;border-right:3px solid #4E250C;border-top:3px solid #85411C;border-bottom:3px solid #4E250C;background-color:#8F431B;color:#FC6;font-weight:bold;font-size:14pt;font-family:幼圆;margin-top:26px}
+#dRiddleInx .inx0{cursor:pointer;top:0;left:0%;margin-left:0px;width:450px;height:600px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_IndexBack.png) no-repeat left top}
+#dRiddleInx .inx1{cursor:pointer;top:0;left:0%;margin-left:0px;width:450px;height:600px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_IndexBack.png) no-repeat right top}
+#dRiddleInx1{position:relative;height:473px;width:100%}
+#dRiddleInx1 div{position:absolute;width:50%;height:442px;text-align:center}
+#dRiddleInx1 .button{cursor:pointer;width:113px;height:41px;border-left:3px solid #85411C;border-right:3px solid #4E250C;border-top:3px solid #85411C;border-bottom:3px solid #4E250C;background-color:#8F431B;color:#FC6;font-weight:bold;font-size:14pt;font-family:幼圆;margin-top:26px}
+#dRiddleInx1 .inx01{cursor:pointer;top:0;left:50%;margin-left:-110px;width:221px;height:310px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_IndexBack.png) no-repeat left top}
+#dRiddleInx1 .inx11{cursor:pointer;top:0;left:50%;margin-left:-110px;width:221px;height:310px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_IndexBack.png) no-repeat right top}
+
+#dRiddle0 td,#dMini0 td,#dMini1 td{cursor:pointer;width:20%;text-align:center;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Challenge.png) no-repeat 50%;padding-top:18px}
+#dRiddle0{position:relative;height:473px;width:94%;display:none}
+#dRiddle0 .list,#dMini0 .list,#dMini1 .list{margin-top:15px;height:45px}
+#dRiddle0 .button,#dRiddle1 .button{top:475px;position:absolute;left:30px;text-align:center;cursor:pointer;width:164px;height:26px;line-height:26px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_IndexButton.png);color:#000080;font-size:12px}
+#dRiddle1{text-align:left;position:relative;height:473px;width:100%;display:none;top:-10px}
+#dRiddleClose,#dMini1 .button,#dMini0 .button,#dAdvSmallContainer .button{position:absolute;left:650px;top:564px;text-align:center;cursor:pointer;width:113px;height:43px;line-height:43px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Almanac_CloseButton.png);color:#000080;font-size:0px}
+#dRiddle1 .list{width:48%}
+
+#dAdvSmallContainer{padding-left:50px}
+#dAdvSmallContainer img{position:absolute;}
+#dAdvSmallContainer .lvl{font-size:35px;font-weight:bold;font-family:方正少儿_GBK;float:left;cursor:pointer;margin-left:90px;color:rgba(255, 0, 0, 0);height:500px}
+#dAdvSmallContainer .lvl2{position:relative;float:left;width:900px;line-height:35px;padding-top:15px}
+#dAdvSmallContainer .list{position:relative;width:700px;height:95px;float:left}
+#dAdvSmallContainer .list .title{position:relative;color:#000;font-size:0px;line-height:25px;font-weight:bold;font-family:方正少儿_GBK;height:90px;width:60px;float:left;padding-top:25px}
+#dAdvSmallContainer .list .icon{position:relative;height:100px;width:100px;float:left;margin-left:20px}
+#dAdvSmallContainer .img1{top:17px}
+#dAdvSmallContainer .img2{left:8px;top:11px}
+
+.Announcement{position:absolute;left:50%;margin-top:-20px;margin-left:-450px;padding-top:25px;height:60px;overflow:hidden;top:600px;width:900px;background:url('/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/new_skin/game_bg.png') no-repeat 0 0;z-index:65535}
+.Announcement .d1{float:left;position:relative;height:40px;width:75%}
+.Announcement .d1 .share{font-weight:bold;float:left;line-height:40px;margin-left:0;font-size:14px}
+.dLittleChat{float:left;width:25%;margin-top:5px}
+.dLittleChat a{color:#060;font-size:14px;font-family:Yahei mono,微软雅黑}
+.game_ipt_01{float:left;width:79px;height:26px;margin-right:10px; background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/new_skin/game_ipt.png) no-repeat;border:0px;font-weight:600;color:#FFF;font-size:12px; vertical-align:top;cursor:pointer}
+
+#dSpeedContainer{position:absolute;left:48%;margin-left:-300px;top:60px;width:652px;font-size:14px;height:478px;border:0px solid #000;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Speed.png) no-repeat;color:#FFF;text-align:center;display:none;z-index:255}
+#dSpeedContainer .title{position:relative;height:25px;width:538px;line-height:25px;font-weight:bold;color:#FF0}
+#dSpeedContainer .nowspeed{height:50px;line-height:50px;font-weight:bold;color:#FF0}
+#dSpeedContainer .content{text-align:left;line-height:30px}
+#dSpeedContainer .content span{font-weight:700;color:#FF0}
+
+.dSpeed{position:relative;margin-top:20px;height:50px;width:100%;left:240px}
+.dSpeed div{cursor:pointer}
+.dSpeed .dS1{float:left;width:40%;line-height:50px;font-weight:bold}
+.dSpeed .dS2 div{float:left}
+
+button.jhp{
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+	background-image:-webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+	-webkit-border-radius:2px;
+	-webkit-user-select:none;
+	background-color:#f5f5f5;
+	background-image:linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image:-o-linear-gradient(top,#f5f5f5,#f1f1f1);
+	border:1px solid #dcdcdc;
+	border:1px solid rgba(0, 0, 0, 0.1);
+	border-radius:2px;
+	color:#666;
+	cursor:pointer;
+	font-family:arial,sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	text-align:center;
+}
+button.jhp:hover{
+	background-image:
+	-webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+	background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.1);
+	background-color:#f8f8f8;
+	background-image:linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:-o-linear-gradient(top,#f8f8f8,#f1f1f1);
+	border:1px solid #c6c6c6;
+	box-shadow:0 1px 1px rgba(0,0,0,0.1);
+	color:#333
+}
+button.jhp:focus{
+	border:1px solid #4d90fe;
+	outline:none
+}
+
+#Diary{visibility:hidden;position:absolute;z-index:255;width:900px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/ZombieIsLand_BG_1.jpg) no-repeat}
+#Diary .button_Close{width: 74px; height: 57px; border-left: .0px solid rgba(225, 219, 223, 0); border-right: 0px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 0px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/csd_0017_Layer-3.png")}
+#Diary1{visibility:hidden;position:absolute;z-index:255;width:900px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/KaiFaZhe.jpg) no-repeat}
+#Diary1 .button_Close{width: 74px; height: 57px; border-left: .0px solid rgba(225, 219, 223, 0); border-right: 0px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 0px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/csd_0017_Layer-3.png")}
+#Diary2{visibility:hidden;position:absolute;z-index:255;width:900px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/KaiFaZhe.jpg) no-repeat}
+#Diary2 .button_Close{width: 74px; height: 57px; border-left: .0px solid rgba(225, 219, 223, 0); border-right: 0px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 0px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/csd_0017_Layer-3.png")}
+
+
+#Box{visibility:hidden;position:absolute;z-index:255;width:900px;background:url(/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Box.jpg) no-repeat}
+#Box .button_Close{width: 24px; height: 24px; border-left: .0px solid rgba(225, 219, 223, 0); border-right: 0px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 0px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("/web/20240901141758im_/http://sunflower.lonelystar.org/exp/game4/images/interface/Box_btn.png")}
+/*
+     FILE ARCHIVED ON 14:17:58 Sep 01, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:32:02 May 18, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.644
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.011
+  esindex: 0.013
+  cdx.remote: 12.81
+  LoadShardBlock: 105.988 (3)
+  PetaboxLoader3.datanode: 77.406 (4)
+  PetaboxLoader3.resolve: 75.696 (2)
+  load_resource: 93.276
+*/

@@ -1,0 +1,347 @@
+function _createForOfIteratorHelper(o, allowArrayLike) {
+  var it;
+
+  if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+    if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
+      if (it) o = it;
+      var i = 0;
+
+      var F = function F() {};
+
+      return {
+        s: F,
+        n: function n() {
+          if (i >= o.length) return {
+            done: true
+          };
+          return {
+            done: false,
+            value: o[i++]
+          };
+        },
+        e: function e(_e) {
+          throw _e;
+        },
+        f: F
+      };
+    }
+
+    throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+  }
+
+  var normalCompletion = true,
+      didErr = false,
+      err;
+  return {
+    s: function s() {
+      it = o[Symbol.iterator]();
+    },
+    n: function n() {
+      var step = it.next();
+      normalCompletion = step.done;
+      return step;
+    },
+    e: function e(_e2) {
+      didErr = true;
+      err = _e2;
+    },
+    f: function f() {
+      try {
+        if (!normalCompletion && it["return"] != null) it["return"]();
+      } finally {
+        if (didErr) throw err;
+      }
+    }
+  };
+}
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+(function () {
+  var $ = function $(id) {
+    return id && document.getElementById(id);
+  },
+      $n = function $n(tag) {
+    return document.createElement(tag);
+  },
+      ClearChild = function ClearChild() {
+    for (var _len = arguments.length, arr = new Array(_len), _key = 0; _key < _len; _key++) {
+      arr[_key] = arguments[_key];
+    }
+
+    return arr.forEach(function (ele) {
+      return (ele === null || ele === void 0 ? void 0 : ele.parentNode) && ele.parentNode.removeChild(ele);
+    });
+  },
+      SetBlock = function SetBlock() {
+    for (var _len2 = arguments.length, arr = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      arr[_key2] = arguments[_key2];
+    }
+
+    return arr.forEach(function (ele) {
+      return ele.style.display = "block";
+    });
+  },
+      SetNone = function SetNone() {
+    for (var _len3 = arguments.length, arr = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+      arr[_key3] = arguments[_key3];
+    }
+
+    return arr.forEach(function (ele) {
+      return ele.style.display = "none";
+    });
+  },
+      SetVisible = function SetVisible() {
+    for (var _len4 = arguments.length, arr = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
+      arr[_key4] = arguments[_key4];
+    }
+
+    return arr.forEach(function (ele) {
+      return ele && (ele.style.visibility = "visible");
+    });
+  },
+      SetHidden = function SetHidden() {
+    for (var _len5 = arguments.length, arr = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
+      arr[_key5] = arguments[_key5];
+    }
+
+    return arr.forEach(function (ele) {
+      return ele.style.visibility = "hidden";
+    });
+  },
+      SetAlpha = function SetAlpha(ele, alpha) {
+    return ele.style.opacity = alpha;
+  },
+      innerText = function innerText(ele, str) {
+    return ele.innerText = str;
+  },
+      SetStyle = function SetStyle(ele, json) {
+    for (var key in json) {
+      ele.style[key] = json[key];
+    }
+
+    return ele;
+  },
+      NewEle = function NewEle(id, tag, cssText, properties, wrap) {
+    var ele = $n(tag);
+    ele.id = id;
+    ele.style.cssText = cssText;
+    Object.assign(ele, properties);
+    wrap && wrap.appendChild(ele);
+    return ele;
+  },
+      NewImg = function NewImg(id, src, cssText, wrap, properties) {
+    var _properties = {
+      src: src
+    };
+    Object.assign(_properties, properties);
+    return NewEle(id, 'img', cssText, _properties, wrap);
+  },
+      EditEle = function EditEle(ele, attributes, style, wrap, properties) {
+    if (attributes) {
+      for (var index in attributes) {
+        ele.setAttribute(index, attributes[index]);
+      }
+    }
+
+    SetStyle(ele, style);
+    Object.assign(ele, properties);
+    wrap && wrap.appendChild(ele);
+    return ele;
+  },
+      EditImg = function EditImg(ele, id, src, style, wrap) {
+    SetStyle(ele, style);
+    id && (ele.id = id);
+    src && (ele.src = src);
+    wrap && wrap.appendChild(ele);
+    return ele;
+  };
+
+  var oEffects = {
+    Animate: function Animate(ele, properties) {
+      var duration = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0.4;
+      var ease = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'linear';
+      var callback = arguments.length > 4 ? arguments[4] : undefined;
+      var delay = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
+      var iterationCount = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : 1;
+      var cssValues = {};
+      var cssProperties = [];
+      var cssList = ['-name', '-property', '-duration', '-delay', '-timing-function'];
+      var effectType;
+      typeof duration === 'string' && (duration = {
+        fast: 0.2,
+        slow: 0.6
+      }[duration]);
+
+      if (typeof properties === 'string') {
+        cssValues['animation-name'] = properties;
+        cssValues['animation-duration'] = duration + 's';
+        cssValues['animation-delay'] = delay + 's';
+        cssValues['animation-timing-function'] = ease;
+        cssValues['animation-iteration-count'] = iterationCount;
+        cssValues['animation-fill-mode'] = 'none';
+        effectType = 'animation';
+      } else {
+        for (var index in properties) {
+          cssValues[index] = properties[index];
+          cssProperties.push(index);
+        }
+
+        cssValues['transition-property'] = cssProperties.join(', ');
+        var traverse = {
+          "duration": [duration, "s, ", "s"],
+          "delay": [delay, "s, ", "s"],
+          "timing-function": [ease, ", ", ""]
+        };
+
+        for (var i in traverse) {
+          if (_typeof(traverse[i][0]) != 'object') {
+            cssValues['transition-' + i] = traverse[i][0] + traverse[i][2];
+          } else {
+            cssValues['transition-' + i] = traverse[i][0].join(traverse[i][1]) + traverse[i][2];
+          }
+        }
+
+        effectType = 'transition';
+      }
+
+      cssList = cssList.map(function (key) {
+        return effectType + key;
+      });
+      ele.addEventListener(effectType + 'end', function _callback(event) {
+        if (event.target !== event.currentTarget) return;
+        ele.removeEventListener(effectType + 'end', _callback);
+
+        var _iterator = _createForOfIteratorHelper(cssList),
+            _step;
+
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var _index = _step.value;
+            ele.style[_index] = '';
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+
+        callback && callback(ele);
+      });
+      ele.clientLeft;
+      SetStyle(ele, cssValues);
+      return ele;
+    },
+    fadeTo: function fadeTo(ele, opacity, duration, callback) {
+      return oEffects.Animate(ele, {
+        opacity: opacity
+      }, duration, undefined, callback);
+    },
+    fadeIn: function fadeIn(ele, duration, callback) {
+      return oEffects.fadeTo(ele, 1, duration, callback);
+    },
+    fadeOut: function fadeOut(ele, duration, callback, delay) {
+      return oEffects.fadeTo(ele, 0, duration, callback, delay);
+    }
+  };
+  var nowY = 0;
+  var errorMsgs = {};
+  var emoji = ["∑(っ°Д°;)っ", "(°ー°〃)", "Σ(°△°||)", "⊙▽⊙", $__language_Array__["74d1bb3bb02a499f662942b0b04c05b4"]];
+  var A1 = [$__language_Array__["3d24cfddcaa42d351527eeec00a1c54f"], $__language_Array__["9f632dc91ec799f06b45e6410890a50e"], $__language_Array__["ec53882bc1810667587e4bc150f97053"], $__language_Array__["b07725ab42545f15387154329da529b1"]];
+
+  function getFileName(o) {
+    var pos = o.lastIndexOf('/');
+    return o.substring(pos + 1).split(".")[0];
+  }
+
+  function BoxErr() {
+    var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+    var message = arguments.length > 1 ? arguments[1] : undefined;
+    var source = arguments.length > 2 ? arguments[2] : undefined;
+    var lineno = arguments.length > 3 ? arguments[3] : undefined;
+    var colno = arguments.length > 4 ? arguments[4] : undefined;
+    var error = arguments.length > 5 ? arguments[5] : undefined;
+    var s = NewEle("error_" + Math.random(), "div", "pointer-events:none;z-index:3000;box-shadow:0 0 5px black;position:absolute;height:80px;transform:scaleX(0);width:300px;opacity:0;right:-150px;bottom:".concat(nowY, ";background:white;margin:6px;border-radius:4px;font-size:0.75em;padding:10px;"), {
+      innerText: type == 0 ? $__language_Array__["f518332b653cfa8e254f71cfa10de562"].concat(source, $__language_Array__["2be822d5d2caf4ad8be4ffb1be7b2285"]).concat(emoji[Math.floor(Math.random() * emoji.length)], $__language_Array__["9006e25ba0dafd90b0ead6330255c91f"]) : $__language_Array__["51614e2ac9b3bddc2de3e70f99d1ef85"].concat(message, " in ").concat(getFileName(source), "_").concat(lineno, "_").concat(colno, "\n").concat(A1[Math.floor(Math.random() * A1.length)]).concat(emoji[Math.floor(Math.random() * emoji.length)], $__language_Array__["1c2c05dc9be9f9eeff4e51a682ef83cf"])
+    }, document.body);
+    var height = s.offsetHeight + Number.parseFloat(s.style.margin);
+    errorMsgs[s.id] = s;
+    oEffects.Animate(s, {
+      opacity: 0.8,
+      transform: "scaleX(1)",
+      right: "0"
+    }, 0.5, false);
+    setTimeout(function () {
+      delete errorMsgs[s.id];
+      oEffects.Animate(s, {
+        opacity: 0
+      }, 0.5, false, ClearChild);
+
+      if (Object.keys(errorMsgs).length == 0) {
+        nowY = 0;
+      }
+    }, 7000);
+    nowY += height;
+  }
+
+  ;
+
+  window.onerror = function () {
+    for (var _len6 = arguments.length, arr = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
+      arr[_key6] = arguments[_key6];
+    }
+
+    BoxErr.apply(void 0, [1].concat(arr));
+  };
+
+  window.addEventListener('error', function (e) {
+    if (e.constructor === Event) {
+      var tmp;
+
+      if (tmp = e.target.getAttribute("src")) {
+        BoxErr(0, false, getFileName(tmp));
+      }
+    }
+  }, {
+    capture: true
+  });
+  window.addEventListener("unhandledrejection", function (e) {
+    if (e.constructor === ErrorEvent) {
+      BoxErr(1, e.message, e.source, e.lineno, e.colno, e.error);
+      e.preventDefault();
+    }
+  }, true);
+})();
